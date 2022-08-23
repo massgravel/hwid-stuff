@@ -1,0 +1,7 @@
+*
+!*.c
+!*.py
+!Makefile
+!README.md
+!LICENSE
+!.gitignore
