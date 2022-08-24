@@ -73,7 +73,7 @@ void print_block(uint8_t *hw_block) {
     printf("RAM hash    : [%02x]\n", hwid->hashRAM);
     printf("SMBIOS hash : [%04x]\n", hwid->hashBIOS);
     for(size_t i = 0; i < instance_count; i++) {
-        printf("Hash (%02zx)   : [%04x] %s\n", i, hwid->instanceHashes[i], (hwid->instanceHashes[i] & 1) == 1 ? "[[Non-Removable]]" : "");
+        printf("Hash (%02zx)   : [%04x] %s\n", i, hwid->instanceHashes[i], (hwid->instanceHashes[i] & 1) == 1 ? "[[Removable]]" : "");
     }
     puts("");
 
