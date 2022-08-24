@@ -2,7 +2,7 @@
 
 Here are some basic example utilities for GenuineAuthorization tickets and HWID block blobs.
 
-If you'd like to learn more about the things those scripts work with, go to [massgravel/activation](https://github.com/massgravel/activation).
+If you'd like to learn more about the things those scripts work with, go to [massgravel/activation](https://github.com/massgravel/activation) (if I updated it already).
 
 # Info
 
