@@ -53,12 +53,12 @@ const char *HWID_NAMES[] = {
 
 void print_block(uint8_t *hw_block) {
     uint32_t size = *(uint32_t *)hw_block;
-    uint16_t unknown = *(uint16_t *)(hw_block + 4);
+    uint16_t threshold = *(uint16_t *)(hw_block + 4); // just an educated guess for now
     unsigned instance_count = 0;
 
     puts("Block Information:");
-    printf("Size    : [%08x]\n", size);
-    printf("Unknown : [%08x]\n", unknown);
+    printf("Size      : [%08x]\n", size);
+    printf("Threshold : [%08x]\n", threshold);
     puts("");
 
     struct HWID *hwid = (struct HWID *)(hw_block + 6);
