@@ -53,7 +53,7 @@ const char *HWID_NAMES[] = {
 
 void print_block(uint8_t *hw_block) {
     uint32_t size = *(uint32_t *)hw_block;
-    uint16_t threshold = *(uint16_t *)(hw_block + 4); // just an educated guess for now
+    uint16_t threshold = *(uint16_t *)(hw_block + 4);
     unsigned instance_count = 0;
 
     puts("Block Information:");
